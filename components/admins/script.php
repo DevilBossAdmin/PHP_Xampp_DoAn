@@ -18,7 +18,7 @@
 <script src=<?php echo $level_footer._DIR_['PLUGINS']['ADMINS'].'sparklines/sparkline.js'?>></script>
 <!-- JQVMap -->
 <script src=<?php echo $level_footer._DIR_['PLUGINS']['ADMINS'].'jqvmap/jquery.vmap.min.js'?>></script>
-<script src=<?php echo $level_footer._DIR_['PLUGINS']['ADMINS'].'jqvmap/maps/jquery.vmap.usa.js'?>></script>
+<script src=<?php echo $level_footer._DIR_['PLUGINS']['ADMINS'].'jqvmap/maps/jquery.vmap.world.js'?>></script>
 <!-- jQuery Knob Chart -->
 <script src=<?php echo $level_footer._DIR_['PLUGINS']['ADMINS'].'jquery-knob/jquery.knob.min.js'?>></script>
 <!-- daterangepicker -->

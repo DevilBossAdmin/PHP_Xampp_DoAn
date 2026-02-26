@@ -33,7 +33,7 @@
             if(empty(trim($_POST["price"]))){
                 $price_err = "Vui lòng không để trống đơn giá sản phẩm.";
             } else {
-                $price = (int)trim($_POST["price"]);
+                $price = (int)trim($_POST["price"], "VNĐ");
             }
     
             if(empty(trim($_POST["image"]))){

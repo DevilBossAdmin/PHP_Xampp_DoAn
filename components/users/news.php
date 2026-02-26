@@ -55,7 +55,7 @@
                                     </div>
                                     <!-- Product Description -->
                                     <div class="product-description">
-                                        <h4 class="product-price"><?php echo $sanpham["don_gia"];?> đ</h4>
+                                        <h4 class="product-price"><?php echo number_format($sanpham["don_gia"],0,',','.');?> VNĐ</h4>
                                         <p><?php echo $sanpham["ten_san_pham"];?></p>
                                         
                                         <!-- Add to Cart -->

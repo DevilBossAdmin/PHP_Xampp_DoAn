@@ -56,7 +56,7 @@
                         <td><?=$hoadon['id_hoa_don']?></td>
                         <td><?=$hoadon['id_nguoi_dung']?></td>
                         <td><?=$hoadon['dia_chi_nhan_hang']?></td>
-                        <td><?=$hoadon['tong_tien']?></td>
+                        <td><?=number_format($hoadon['tong_tien'],0,',','.')?> vnđ</td>
                         <?php
                           if($hoadon['tinh_trang_thanh_toan'] == 1) {
                         ?>

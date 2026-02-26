@@ -6,7 +6,7 @@
     <!-- Brand Logo -->
     <a href="index.php" class="brand-link">
       <img src=<?php echo $level_sidebar._DIR_['IMG']['ADMINS'].'user8-128x128.jpg'?> alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-      <span class="brand-text font-weight-light">AdminLTE 3</span>
+      <span class="brand-text font-weight-light">Admin</span>
     </a>
 
     <!-- Sidebar -->

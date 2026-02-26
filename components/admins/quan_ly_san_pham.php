@@ -63,7 +63,7 @@
                         <td>...</td>
                         <td id="mo_ta_sp<?=$sanpham["id"];?>" style="display:none;"><?=$sanpham['mo_ta_san_pham']?></td>
                         <td><?=$sanpham['so_luong']?></td>
-                        <td><?=$sanpham['don_gia']?></td>
+                        <td><?=number_format($sanpham['don_gia'],0,',','.')?> vnđ</td>
                         <td><?=$sanpham['ten_loai_san_pham']?></td>
                         <td><img width="100" height="100" src="<?php echo _DIR_["IMG"]["ADMINS"].'product/'.$sanpham['hinh_anh']?>" alt=""></td>
                         <td><?=$sanpham['ngay_dang']?></td>

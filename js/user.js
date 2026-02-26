@@ -9,6 +9,33 @@ $(document).ready(function(event){
         dateFormat: 'yy-mm-dd'
     });
 
+
+    // ===== Qty +/- handler (fix inline onclick errors & dùng chung cho cart/product_details) =====
+    $(document).on('click', '.qty-minus, .qty-plus', function (e) {
+        e.preventDefault();
+        var targetId = $(this).data('target');
+        var $input = targetId ? $('#' + targetId) : $(this).siblings('input.qty-text');
+
+        if ($input.length === 0) return;
+
+        var step = parseInt($input.attr('step') || '1', 10);
+        var min  = parseInt($input.attr('min') || '1', 10);
+        var max  = parseInt($input.attr('max') || '9999', 10);
+        var val  = parseInt($input.val() || '0', 10);
+
+        if (isNaN(val)) val = min;
+
+        if ($(this).hasClass('qty-minus')) {
+            val = val - step;
+            if (val < min) val = min;
+        } else {
+            val = val + step;
+            if (val > max) val = max;
+        }
+
+        $input.val(val).trigger('change');
+    });
+
     // reset thong bao loi 
     $(document).on('click','#btn-cap-nhat-user,#btn-doi-mat-khau-user,.btn-gui-binh-luan',function(event){
         // reset loi cap nhat thong tin user
