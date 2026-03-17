@@ -1,0 +1,28 @@
+CAP NHAT QUAN LY DON HANG + DANG NHAP ADMIN
+
+1. Import lai file CSDL.sql neu ban muon co day du cot moi:
+- ten_nguoi_nhan
+- so_dien_thoai_nhan
+- trang_thai_don_hang
+
+2. Neu khong import lai DB, chay tay trong phpMyAdmin:
+ALTER TABLE hoadons ADD COLUMN ten_nguoi_nhan VARCHAR(120) NULL AFTER dia_chi_nhan_hang;
+ALTER TABLE hoadons ADD COLUMN so_dien_thoai_nhan VARCHAR(30) NULL AFTER ten_nguoi_nhan;
+ALTER TABLE hoadons ADD COLUMN trang_thai_don_hang VARCHAR(30) NOT NULL DEFAULT 'pending_confirm' AFTER ghi_chu;
+
+3. Cau hinh Gmail API de gui thong bao:
+- Khong nhung token truc tiep vao source code.
+- Tu dat bien moi truong tren may cua ban:
+  GMAIL_BEARER_TOKEN=...
+  GMAIL_FROM_EMAIL=...
+  GMAIL_FROM_NAME=Website linh kien dien tu
+
+4. Tinh nang moi admin don hang:
+- Xem chi tiet hoa don: xem nguoi dat, nguoi nhan, dia chi, sdt, ghi chu, san pham
+- Cap nhat trang thai: cho xac nhan, cho lay hang, cho giao hang, da giao, tra hang
+- Cap nhat thanh toan: da thanh toan / chua thanh toan
+- Gui thong bao den Gmail khach hang neu da cau hinh Gmail API
+
+5. Da sua loi dang nhap admin:
+- Tach rieng session admin
+- Khong con vao admin khi nhap bua hoac dung session sai

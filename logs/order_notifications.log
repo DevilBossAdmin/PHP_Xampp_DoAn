@@ -1,0 +1,8 @@
+[2026-03-17 00:28:04] skipped | binhb479@gmail.com | Cập nhật đơn hàng #44 | Thiếu cấu hình Gmail API trong biến môi trường.
+[2026-03-17 00:28:13] skipped | binhb479@gmail.com | Cập nhật đơn hàng #44 | Thiếu cấu hình Gmail API trong biến môi trường.
+[2026-03-17 01:10:09] skipped | binhb479@gmail.com | Cập nhật đơn hàng #46 | Thiếu cấu hình EMAIL_USERNAME / MAIL_FROM_ADDRESS trong file .env
+[2026-03-17 01:14:54] skipped | binhb479@gmail.com | Cập nhật đơn hàng #46 | Thiếu cấu hình EMAIL_USERNAME / MAIL_FROM_ADDRESS trong file .env
+[2026-03-17 01:15:29] sent | binhb479@gmail.com | Cập nhật đơn hàng #46 | Đã gửi email SMTP thành công
+[2026-03-17 01:15:33] sent | binhb479@gmail.com | Cập nhật đơn hàng #46 | Đã gửi email SMTP thành công
+[2026-03-17 01:15:36] sent | binhb479@gmail.com | Cập nhật đơn hàng #46 | Đã gửi email SMTP thành công
+[2026-03-17 01:15:39] sent | binhb479@gmail.com | Cập nhật đơn hàng #46 | Đã gửi email SMTP thành công
