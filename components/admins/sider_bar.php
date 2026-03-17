@@ -15,19 +15,31 @@
       <div class="user-panel mt-3 pb-3 mb-3 d-flex">
         <div class="image">
         <?php
+<<<<<<< HEAD
           if($_SESSION["admin_photo"] == "image.jpg") {
+=======
+          if($_SESSION["photo"] == "image.jpg") {
+>>>>>>> 9757977c83c8138327f5b9488c8231c3618aafda
         ?>
             <img src=<?php echo $level_sidebar._DIR_['IMG']['ADMINS'].'user2-160x160.jpg'?> class="img-circle elevation-2" alt="User Image">
         <?php
           } else {
         ?>
+<<<<<<< HEAD
             <img src=<?php echo $level_sidebar._DIR_['IMG']['ADMINS']."info/".$_SESSION["admin_photo"]?> class="img-circle elevation-2" alt="User Image">
+=======
+            <img src=<?php echo $level_sidebar._DIR_['IMG']['ADMINS']."info/".$_SESSION["photo"]?> class="img-circle elevation-2" alt="User Image">
+>>>>>>> 9757977c83c8138327f5b9488c8231c3618aafda
         <?php
           }
         ?>
           </div>
         <div class="info">
+<<<<<<< HEAD
           <a href="#" class="d-block"><?php echo $_SESSION["admin_name"];?></a>
+=======
+          <a href="#" class="d-block"><?php echo $_SESSION["username"];?></a>
+>>>>>>> 9757977c83c8138327f5b9488c8231c3618aafda
         </div>
       </div>
 

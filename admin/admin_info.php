@@ -1,7 +1,15 @@
 <?php
     include_once('config_admin.php');
+<<<<<<< HEAD
     require_once('admin_auth.php');
     require_admin_login();
+=======
+    session_start();
+    if(!isset($_SESSION["isLoggedIn"]) || $_SESSION["isLoggedIn"] !== true){
+       header("location:admin_login.php");
+       exit();
+    }
+>>>>>>> 9757977c83c8138327f5b9488c8231c3618aafda
     $name_duplicate = $email_duplicate = $phone_duplicate = "";
     $name = $email = $phone = $birth = $address = $img_admin_file = $img_admin = "";
     $name_err = $email_err  = $phone_err = $birth_err = $address_err = $image_err = "";
@@ -56,7 +64,11 @@
                 $image_err = "Đuôi tệp không hợp lệ.";
                 }
                 else{
+<<<<<<< HEAD
                     $old_image = DP::run_query("select photo from admins where id = ?",[(int)$_SESSION['admin_id']],2);
+=======
+                    $old_image = DP::run_query("select photo from admins where id = ?",[(int)$_SESSION['id']],2);
+>>>>>>> 9757977c83c8138327f5b9488c8231c3618aafda
                     if(count($old_image) > 0){
                         if($old_image[0]['photo'] == "image.jpg"){
                             $result = move_uploaded_file($_FILES['img_admin_file']['tmp_name'], '../img/img-admin/info/' . $code.'.'.$ext);
@@ -83,11 +95,19 @@
         }
         
         if(empty($name_err) && empty($email_err) && empty($old_pass_err) && empty($phone_err) && empty($birth_err) && empty($img_admin_err) && empty($address_err) ){
+<<<<<<< HEAD
             $conf = DP::run_query("select password from admins where id = ?",[(int)$_SESSION["admin_id"]],2);
             if(password_verify($old_pass,$conf[0]["password"])){
                 $update = DP::run_query("Update admins set name = ?, email = ?, birth = ?, phone = ?, address = ?,photo = ? where id = ?",[$name,$email,$birth,$phone,$address,$img_admin,(int)$_SESSION["admin_id"]],1);
                 if($update){
                     $_SESSION["admin_photo"] = $img_admin;
+=======
+            $conf = DP::run_query("select password from admins where id = ?",[(int)$_SESSION["id"]],2);
+            if(password_verify($old_pass,$conf[0]["password"])){
+                $update = DP::run_query("Update admins set name = ?, email = ?, birth = ?, phone = ?, address = ?,photo = ? where id = ?",[$name,$email,$birth,$phone,$address,$img_admin,(int)$_SESSION["id"]],1);
+                if($update){
+                    $_SESSION["photo"] = $img_admin;
+>>>>>>> 9757977c83c8138327f5b9488c8231c3618aafda
                     echo json_encode(array("statusCode"=>200));
                     exit();
                 } else {

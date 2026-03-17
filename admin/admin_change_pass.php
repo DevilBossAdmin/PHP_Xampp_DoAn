@@ -1,8 +1,16 @@
 <?php
     include_once('config_admin.php');
 
+<<<<<<< HEAD
     require_once('admin_auth.php');
     require_admin_login();
+=======
+    session_start();
+    if(!isset($_SESSION["isLoggedIn"]) || $_SESSION["isLoggedIn"] !== true){
+       header("location:admin_login.php");
+       exit();
+    }
+>>>>>>> 9757977c83c8138327f5b9488c8231c3618aafda
     $old_pass = $new_pass = $confirm_new_pass = "";
     $old_pass_err = $new_pass_err = $confirm_new_pass_err = "";
     if($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -31,10 +39,17 @@
         }
 
         if(empty($old_pass_err) && empty($new_pass_err) && empty($confirm_new_pass_err)){
+<<<<<<< HEAD
             $auth = DP::run_query("select password from admins where id = ?",[$_SESSION["admin_id"]],2);
             if(password_verify($old_pass,$auth[0]["password"])){
                 $new_pass = password_hash($new_pass,PASSWORD_DEFAULT);
                 $update_new_pass = DP::run_query("Update admins set password = ? where id = ?",[$new_pass,$_SESSION["admin_id"]],1);
+=======
+            $auth = DP::run_query("select password from admins where id = ?",[$_SESSION["id"]],2);
+            if(password_verify($old_pass,$auth[0]["password"])){
+                $new_pass = password_hash($new_pass,PASSWORD_DEFAULT);
+                $update_new_pass = DP::run_query("Update admins set password = ? where id = ?",[$new_pass,$_SESSION["id"]],1);
+>>>>>>> 9757977c83c8138327f5b9488c8231c3618aafda
                 if($update_new_pass){
                     echo json_encode(array(
                         "statusCode"=>200,

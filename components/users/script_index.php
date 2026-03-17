@@ -5,6 +5,7 @@
 <script src=<?php echo _DIR_['JS']['USERS'].'active.js'?>></script>
 <script src=<?php echo _DIR_['JS']['USERS'].'user.js'?>></script>
 <script src=<?php echo _DIR_['JS']['USERS'].'cart.js'?>></script>
+<<<<<<< HEAD
     <script src=<?php echo _DIR_['JS']['USERS'].'chat-aibox.js'?>></script>
 
 <script>
@@ -49,5 +50,7 @@
 </div>
 <?php } ?>
 
+=======
+>>>>>>> 9757977c83c8138327f5b9488c8231c3618aafda
 </body>
 </html>

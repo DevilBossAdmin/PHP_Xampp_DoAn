@@ -140,6 +140,7 @@
         include($dir_info.'head_info.php');
         include($dir_info.'script.php');
     }
+<<<<<<< HEAD
     if($_isUserPaymentQrPage == true) {
         $dir_payment = _DIR_['COMPONENTS']['USERS'];
         include($dir_payment.'head.php');
@@ -158,5 +159,7 @@
         include($dir_payment.'footer.php');
         include($dir_payment.'script.php');
     }
+=======
+>>>>>>> 9757977c83c8138327f5b9488c8231c3618aafda
     /** user **/
 ?>

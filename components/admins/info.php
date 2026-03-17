@@ -1,5 +1,9 @@
 <?php
+<<<<<<< HEAD
     $admin_info = DP::run_query("select * from admins where id = ?",[(int)$_SESSION["admin_id"]],2);
+=======
+    $admin_info = DP::run_query("select * from admins where id = ?",[(int)$_SESSION["id"]],2);
+>>>>>>> 9757977c83c8138327f5b9488c8231c3618aafda
 
 ?>
 

@@ -31,6 +31,7 @@
             if(count($row) > 0){
                 if(password_verify($pass,$row[0]["password"])){
                         $_SESSION["isUserLoggedIn"] = true;
+<<<<<<< HEAD
                         $_SESSION["user_id"] = (int)$row[0]["id"];
                         $_SESSION["user_name"] = $row[0]["name"];
                         $_SESSION["user_email"] = $row[0]["email"];
@@ -38,13 +39,20 @@
                         $_SESSION["user_photo"] = $row[0]["photo"];
                         // giữ tương thích cũ cho phần user
                         $_SESSION["id"] = (int)$row[0]["id"];
+=======
+                        $_SESSION["id"] = $row[0]["id"];
+>>>>>>> 9757977c83c8138327f5b9488c8231c3618aafda
                         $_SESSION["name"] = $row[0]["name"];
                         $_SESSION["email"] = $row[0]["email"];
                         $_SESSION["address"] = $row[0]["address"];
                         $_SESSION["photo"] = $row[0]["photo"];
+<<<<<<< HEAD
                         if(!isset($_SESSION["cart"]) || !is_array($_SESSION["cart"])){
                             $_SESSION["cart"] = array();
                         }
+=======
+                        $_SESSION["cart"] = array();
+>>>>>>> 9757977c83c8138327f5b9488c8231c3618aafda
                         header("location:user_info.php");
                 } else {
                         $login_err = "Tài khoản hoặc mật khẩu bạn đăng nhập không chính xác";

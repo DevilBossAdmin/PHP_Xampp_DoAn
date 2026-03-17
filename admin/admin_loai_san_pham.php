@@ -1,7 +1,15 @@
 <?php
      include_once('config_admin.php');
+<<<<<<< HEAD
      require_once('admin_auth.php');
      require_admin_login();
+=======
+     session_start();
+     if(!isset($_SESSION["isLoggedIn"]) || $_SESSION["isLoggedIn"] !== true){
+        header("location:admin_login.php");
+        exit();
+     }
+>>>>>>> 9757977c83c8138327f5b9488c8231c3618aafda
      $ten_loai_san_pham = "";
      $ten_loai_san_pham_err = "";
      $id = "";

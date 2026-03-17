@@ -176,11 +176,15 @@ $(document).ready(function(event){
         $.ajax({
             url:url,
             type:"POST",
+<<<<<<< HEAD
             dataType:'json',
+=======
+>>>>>>> 9757977c83c8138327f5b9488c8231c3618aafda
             data: {
                 func: func,
                 id: id,
             },
+<<<<<<< HEAD
             success:function(res){
                 if(res.statusCode !== 200){
                     alert(res.message || 'Không thể tải chi tiết đơn hàng.');
@@ -255,6 +259,40 @@ $(document).ready(function(event){
             error:function(data){
                 console.log('Error:', data);
                 alert('Không thể tải chi tiết hóa đơn.');
+=======
+            success:function(data){
+                data = JSON.parse(data);
+                let len = data.length;
+
+                $('#modal-xl').modal('show');
+                $('.modal-title').text("Thông tin hoá đơn");
+                if($('th').parents('#t_head').length > 0) {
+                    $('#t_head').empty();
+                }
+                if($('tr > td').parents('#t_body').length > 0) {
+                    $('#t_body').empty();
+                }
+                $('#t_head').append('<th>Tên sản phẩm</th>');
+                $('#t_head').append('<th>Hình ảnh</th>');
+                $('#t_head').append('<th>Đơn giá</th>');
+                $('#t_head').append('<th>Số lượng</th>');
+                $('#t_head').append('<th>Số tiền</th>');
+                let tr = "";
+                for(let i = 0 ; i < len ; i++) {
+                    tr = "<tr id='cthd"+i+"'>";
+                    $('#t_body').append(tr);
+                    $('#t_body > #cthd' + i).append('<td>' + data[i].name + '</td>');
+                    $('#t_body > #cthd' + i).append('<td><img width="120" height="120" src="img/img-admin/product/' + data[i].image + '"></td>');
+                    $('#t_body > #cthd' + i).append('<td>' + data[i].price + '</td>');
+                    $('#t_body > #cthd' + i).append('<td>' + data[i].count + '</td>');
+                    let total = data[i].count * data[i].price;
+                    $('#t_body > #cthd' + i).append('<td>' + total+ '</td>');
+                    $('#t_body').append("</tr>");
+                }
+            },
+            error:function(data){
+                console.log('Error:', data);
+>>>>>>> 9757977c83c8138327f5b9488c8231c3618aafda
             }
         }) 
     });

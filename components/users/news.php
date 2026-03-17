@@ -1,5 +1,9 @@
 <!-- ****** New Arrivals Area Start ****** -->
+<<<<<<< HEAD
 <section id="danh-muc" class="new_arrivals_area section_padding_100_0 clearfix">
+=======
+<section class="new_arrivals_area section_padding_100_0 clearfix">
+>>>>>>> 9757977c83c8138327f5b9488c8231c3618aafda
             <div class="container">
                 <div class="row">
                     <div class="col-12">
@@ -28,7 +32,11 @@
                 <div class="row karl-new-arrivals">
                     <?php
                         foreach($loaisanphams as $loaisanpham) {
+<<<<<<< HEAD
                             $sanphams = DP::run_query("select * from sanphams where sanphams.loai_san_pham_id = ? and sanphams.da_xoa = 0",[$loaisanpham["id"]],2);
+=======
+                            $sanphams = DP::run_query("select * from sanphams where sanphams.loai_san_pham_id = ?",[$loaisanpham["id"]],2);
+>>>>>>> 9757977c83c8138327f5b9488c8231c3618aafda
                             
                             foreach($sanphams as $sanpham) {
                     ?>
@@ -54,7 +62,11 @@
                                         </div>
                                     </div>
                                     <!-- Product Description -->
+<<<<<<< HEAD
                                     <div class="product-description compact-product-description">
+=======
+                                    <div class="product-description">
+>>>>>>> 9757977c83c8138327f5b9488c8231c3618aafda
                                         <h4 class="product-price"><?php echo number_format($sanpham["don_gia"],0,',','.');?> VNĐ</h4>
                                         <p><?php echo $sanpham["ten_san_pham"];?></p>
                                         

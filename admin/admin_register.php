@@ -1,6 +1,9 @@
 <?php
     include_once('config_admin.php');
+<<<<<<< HEAD
 require_once('admin_auth.php');
+=======
+>>>>>>> 9757977c83c8138327f5b9488c8231c3618aafda
 
     $user_err = $pass_err = $confirm_pass_err = $email_err = "";
     $user = $pass = $confirm_pass = $email = "";
@@ -52,14 +55,23 @@ require_once('admin_auth.php');
                 if($isInsert)
                 {
                     header("location:index.php");
+<<<<<<< HEAD
                                         $_SESSION["admin_name"] = $username;
                     $_SESSION["admin_email"] = $email;
+=======
+                    $_SESSION["isLoggedIn"] = true;
+                    $_SESSION["username"] = $username;
+                    $_SESSION["email"] = $email;
+>>>>>>> 9757977c83c8138327f5b9488c8231c3618aafda
                 }
             }
         }
     }
     include_once('config_admin.php');
+<<<<<<< HEAD
 require_once('admin_auth.php');
+=======
+>>>>>>> 9757977c83c8138327f5b9488c8231c3618aafda
     $_isRegisterPage = true;
     include_once($level_config_layout.'layout.php');
 ?>

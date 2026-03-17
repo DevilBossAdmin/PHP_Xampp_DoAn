@@ -29,7 +29,10 @@
   <link rel="stylesheet" href=<?php echo $level_header._DIR_['PLUGINS']['ADMINS'].'daterangepicker/daterangepicker.css'?>>
   <!-- summernote -->
   <link rel="stylesheet" href=<?php echo $level_header._DIR_['PLUGINS']['ADMINS'].'summernote/summernote-bs4.min.css'?>>
+<<<<<<< HEAD
   <link rel="stylesheet" href=<?php echo $level_header._DIR_['CSS']['ADMINS'].'admin-login-custom.css?v=1'?>>
+=======
+>>>>>>> 9757977c83c8138327f5b9488c8231c3618aafda
   <!-- CodeMirror -->
   <link rel="stylesheet" href=<?php echo $level_header._DIR_['PLUGINS']['ADMINS'].'codemirror/codemirror.css'?>>
   <link rel="stylesheet" href=<?php echo $level_header._DIR_['PLUGINS']['ADMINS'].'codemirror/theme/monokai.css'?>>

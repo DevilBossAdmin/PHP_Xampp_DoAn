@@ -35,7 +35,10 @@
     <link href=<?php echo _DIR_['CSS']['USERS'].'core-style.css'?> rel="stylesheet" />
     <link href=<?php echo _DIR_['CSS']['USERS'].'responsive.css'?> rel="stylesheet" />
     <link href=<?php echo _DIR_['CSS']['USERS'].'comment.css'?> rel="stylesheet" />
+<<<<<<< HEAD
     <link href=<?php echo _DIR_['CSS']['USERS'].'custom-compact.css?v=20260312'?> rel="stylesheet" />
+=======
+>>>>>>> 9757977c83c8138327f5b9488c8231c3618aafda
     
 </head>
 <body>

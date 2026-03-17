@@ -12,11 +12,15 @@
     <script src=<?php echo _DIR_['JS']['USERS'].'custom_image.js'?>></script>
     <script src=<?php echo _DIR_['JS']['USERS'].'user.js'?>></script>
     <script src=<?php echo _DIR_['JS']['USERS'].'cart.js'?>></script>
+<<<<<<< HEAD
     <script src=<?php echo _DIR_['JS']['USERS'].'chat-aibox.js'?>></script>
+=======
+>>>>>>> 9757977c83c8138327f5b9488c8231c3618aafda
 
     
     
     
+<<<<<<< HEAD
 
 <?php if(!empty($_enableChatAiBox)) { ?>
 <div class="chat-aibox" data-endpoint="chat_ai_box.php">
@@ -43,5 +47,7 @@
 </div>
 <?php } ?>
 
+=======
+>>>>>>> 9757977c83c8138327f5b9488c8231c3618aafda
 </body>
 </html>

@@ -1,7 +1,15 @@
 <?php
      include_once('config_admin.php');
+<<<<<<< HEAD
      require_once('admin_auth.php');
      require_admin_login();
+=======
+     session_start();
+     if(!isset($_SESSION["isLoggedIn"]) || $_SESSION["isLoggedIn"] !== true){
+        header("location:admin_login.php");
+        exit();
+     }
+>>>>>>> 9757977c83c8138327f5b9488c8231c3618aafda
      $msg_success = "";
      $name = $name_desc = $image = $price = $count = $name_type = "";
      $name_err = $name_desc_err = $image_err = $price_err = $count_err = $name_type_err = "";
@@ -97,7 +105,11 @@
             
             // Thêm loại sản phẩm
             if($thao_tac == "Thêm"){
+<<<<<<< HEAD
                $insert = DP::run_query("Insert into sanphams(ten_san_pham,admin_id,loai_san_pham_id,mo_ta_san_pham,so_luong,don_gia,hinh_anh) values(?,?,?,?,?,?,?)",[$name,(int)$_SESSION["admin_id"],(int)$name_type,$name_desc,(int)$count,(int)$price,$image],3);
+=======
+               $insert = DP::run_query("Insert into sanphams(ten_san_pham,admin_id,loai_san_pham_id,mo_ta_san_pham,so_luong,don_gia,hinh_anh) values(?,?,?,?,?,?,?)",[$name,(int)$_SESSION["id"],(int)$name_type,$name_desc,(int)$count,(int)$price,$image],3);
+>>>>>>> 9757977c83c8138327f5b9488c8231c3618aafda
                if($insert > 0){
                   $query = "select ten_loai_san_pham";
                   $query.= " from sanphams, loaisanphams";
@@ -130,7 +142,11 @@
             set ten_san_pham = ?,admin_id = ?,
             loai_san_pham_id = ?,mo_ta_san_pham = ?, 
             so_luong = ?,don_gia = ?, hinh_anh = ?
+<<<<<<< HEAD
             where id = ?",[$name,(int)$_SESSION["admin_id"],(int)$name_type,$name_desc,(int)$count,(int)$price,$image,(int)$id],1);
+=======
+            where id = ?",[$name,(int)$_SESSION["id"],(int)$name_type,$name_desc,(int)$count,(int)$price,$image,(int)$id],1);
+>>>>>>> 9757977c83c8138327f5b9488c8231c3618aafda
             if($update){
                $msg_success = "Sửa dữ liệu thành công.";
                echo json_encode(array(

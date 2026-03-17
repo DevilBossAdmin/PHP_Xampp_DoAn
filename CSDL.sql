@@ -223,12 +223,16 @@ CREATE TABLE IF NOT EXISTS `hoadons` (
   `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT,
   `user_id` int(10) UNSIGNED NOT NULL,
   `dia_chi_nhan_hang` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+<<<<<<< HEAD
   `ten_nguoi_nhan` varchar(120) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `so_dien_thoai_nhan` varchar(30) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `tinh_trang_thanh_toan` tinyint(4) NOT NULL DEFAULT '0',
   `phuong_thuc_thanh_toan` varchar(30) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'cod',
   `ghi_chu` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `trang_thai_don_hang` varchar(30) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'pending_confirm',
+=======
+  `tinh_trang_thanh_toan` tinyint(4) NOT NULL DEFAULT '0',
+>>>>>>> 9757977c83c8138327f5b9488c8231c3618aafda
   `ngay_tao` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
@@ -240,6 +244,7 @@ CREATE TABLE IF NOT EXISTS `hoadons` (
 -- Đang đổ dữ liệu cho bảng `hoadons`
 --
 
+<<<<<<< HEAD
 INSERT INTO `hoadons` (`id`, `user_id`, `dia_chi_nhan_hang`, `ten_nguoi_nhan`, `so_dien_thoai_nhan`, `tinh_trang_thanh_toan`, `phuong_thuc_thanh_toan`, `ghi_chu`, `trang_thai_don_hang`, `ngay_tao`, `created_at`, `updated_at`) VALUES
 (7, 2, '36 đường 102 phường Thạnh Mỹ Lợi quận 2', NULL, NULL, 1, 'cod', NULL, 'pending_confirm', '2021-03-01 16:47:45', NULL, NULL),
 (8, 2, '36 đường 102 phường Thạnh Mỹ Lợi quận 2', NULL, NULL, 0, 'cod', NULL, 'pending_confirm', '2021-03-04 11:32:24', NULL, NULL),
@@ -267,6 +272,35 @@ INSERT INTO `hoadons` (`id`, `user_id`, `dia_chi_nhan_hang`, `ten_nguoi_nhan`, `
 (35, 11, 'Cà Mau', NULL, NULL, 0, 'cod', NULL, 'pending_confirm', '2021-03-07 09:30:24', NULL, NULL),
 (37, 12, 'Quận Nam Từ Liêm Hà Nội', NULL, NULL, 1, 'cod', NULL, 'pending_confirm', '2021-03-07 10:51:08', NULL, NULL),
 (38, 12, 'Quận Nam Từ Liêm Hà Nội', NULL, NULL, 0, 'cod', NULL, 'pending_confirm', '2021-03-07 10:51:24', NULL, NULL);
+=======
+INSERT INTO `hoadons` (`id`, `user_id`, `dia_chi_nhan_hang`, `tinh_trang_thanh_toan`, `ngay_tao`, `created_at`, `updated_at`) VALUES
+(7, 2, '36 đường 102 phường Thạnh Mỹ Lợi quận 2', 1, '2021-03-01 16:47:45', NULL, NULL),
+(8, 2, '36 đường 102 phường Thạnh Mỹ Lợi quận 2', 0, '2021-03-04 11:32:24', NULL, NULL),
+(9, 3, 'Phường Bình Trưng Tây quận 2', 1, '2021-03-04 16:22:17', NULL, NULL),
+(10, 3, 'Phường Bình Trưng Tây quận 2', 0, '2021-03-04 17:02:56', NULL, NULL),
+(11, 3, 'Phường Bình Trưng Tây quận 2', 1, '2021-03-04 17:03:28', NULL, NULL),
+(12, 3, 'Phường Bình Trưng Tây quận 2', 1, '2021-03-04 17:04:22', NULL, NULL),
+(13, 3, 'Phường Bình Trưng Tây quận 2', 0, '2021-03-04 17:04:53', NULL, NULL),
+(14, 3, 'Phường Bình Trưng Tây quận 2', 0, '2021-03-04 17:05:41', NULL, NULL),
+(15, 3, 'Phường Bình Trưng Tây quận 2', 0, '2021-03-04 17:05:59', NULL, NULL),
+(16, 4, 'Phường Thảo Điền Quận 2', 0, '2021-03-04 17:12:29', NULL, NULL),
+(17, 4, 'Phường Thảo Điền Quận 2', 0, '2021-03-04 17:12:54', NULL, NULL),
+(18, 4, 'Phường Thảo Điền Quận 2', 0, '2021-03-04 17:13:44', NULL, NULL),
+(19, 4, 'Phường Thảo Điền Quận 2', 0, '2021-03-04 17:14:05', NULL, NULL),
+(20, 4, 'Phường Thảo Điền Quận 2', 0, '2021-03-04 17:15:28', NULL, NULL),
+(21, 4, 'Phường Thảo Điền Quận 2', 0, '2021-03-04 17:16:21', NULL, NULL),
+(22, 5, 'Phường An Phú Quận 2', 0, '2021-03-04 17:22:18', NULL, NULL),
+(23, 5, 'Phường An Phú Quận 2', 0, '2021-03-04 17:22:33', NULL, NULL),
+(24, 5, 'Phường An Phú Quận 2', 0, '2021-03-04 17:22:50', NULL, NULL),
+(25, 5, 'Phường An Phú Quận 2', 0, '2021-03-04 17:23:06', NULL, NULL),
+(26, 5, 'Phường An Phú Quận 2', 0, '2021-03-04 17:23:34', NULL, NULL),
+(27, 5, 'Phường An Phú Quận 2', 0, '2021-03-04 17:24:39', NULL, NULL),
+(28, 5, 'Phường An Phú Quận 2', 0, '2021-03-04 17:28:55', NULL, NULL),
+(34, 11, 'Cà Mau', 0, '2021-03-07 09:29:49', NULL, NULL),
+(35, 11, 'Cà Mau', 0, '2021-03-07 09:30:24', NULL, NULL),
+(37, 12, 'Quận Nam Từ Liêm Hà Nội', 1, '2021-03-07 10:51:08', NULL, NULL),
+(38, 12, 'Quận Nam Từ Liêm Hà Nội', 0, '2021-03-07 10:51:24', NULL, NULL);
+>>>>>>> 9757977c83c8138327f5b9488c8231c3618aafda
 
 -- --------------------------------------------------------
 
@@ -282,7 +316,11 @@ CREATE TABLE IF NOT EXISTS `loaisanphams` (
   `created_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
   `updated_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`)
+<<<<<<< HEAD
 ) ENGINE=InnoDB AUTO_INCREMENT=35 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+=======
+) ENGINE=InnoDB AUTO_INCREMENT=29 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+>>>>>>> 9757977c83c8138327f5b9488c8231c3618aafda
 
 --
 -- Đang đổ dữ liệu cho bảng `loaisanphams`
@@ -298,6 +336,7 @@ INSERT INTO `loaisanphams` (`id`, `ten_loai_san_pham`, `da_xoa`, `created_at`, `
 (25, 'gaming', 1, '2021-03-07 02:53:19', NULL),
 (26, 'game 234', 1, '2021-03-07 03:04:33', NULL),
 (27, 'fwa', 1, '2021-03-07 03:15:10', NULL),
+<<<<<<< HEAD
 (28, 'Phụ kiện khác 123', 1, '2021-03-07 03:53:47', NULL),
 -- =============================
 -- Danh mục mới (da_xoa = 0)
@@ -308,6 +347,9 @@ INSERT INTO `loaisanphams` (`id`, `ten_loai_san_pham`, `da_xoa`, `created_at`, `
 (32, 'Phụ kiện điện thoại', 0, CURRENT_TIMESTAMP, NULL),
 (33, 'Thiết bị mạng', 0, CURRENT_TIMESTAMP, NULL),
 (34, 'Gaming Gear', 0, CURRENT_TIMESTAMP, NULL);
+=======
+(28, 'Phụ kiện khác 123', 1, '2021-03-07 03:53:47', NULL);
+>>>>>>> 9757977c83c8138327f5b9488c8231c3618aafda
 
 -- --------------------------------------------------------
 
@@ -332,7 +374,11 @@ CREATE TABLE IF NOT EXISTS `sanphams` (
   PRIMARY KEY (`id`),
   KEY `sanphams_admin_id_foreign` (`admin_id`),
   KEY `loai_san_pham_id` (`loai_san_pham_id`)
+<<<<<<< HEAD
 ) ENGINE=InnoDB AUTO_INCREMENT=78 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+=======
+) ENGINE=InnoDB AUTO_INCREMENT=52 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+>>>>>>> 9757977c83c8138327f5b9488c8231c3618aafda
 
 --
 -- Đang đổ dữ liệu cho bảng `sanphams`
@@ -367,6 +413,7 @@ INSERT INTO `sanphams` (`id`, `ten_san_pham`, `admin_id`, `loai_san_pham_id`, `m
 (50, 'samsum4', 9, 17, 'dbdfgdfgdg', 4, 4, '', '2021-03-07 10:34:11', 1, NULL, NULL),
 (51, 'samsum galaxy note 12i', 9, 16, 'galaxy galaxy', 7, 20, '82f2b308c3b01637c607ce05f52a2fed.jpg', '2021-03-07 10:54:48', 1, NULL, NULL);
 
+<<<<<<< HEAD
 -- Sản phẩm bổ sung cho các danh mục mới
 INSERT INTO `sanphams` (`id`, `ten_san_pham`, `admin_id`, `loai_san_pham_id`, `mo_ta_san_pham`, `so_luong`, `don_gia`, `hinh_anh`, `ngay_dang`, `da_xoa`, `created_at`, `updated_at`) VALUES
 (52, 'RAM DDR4 8GB 3200MHz', 9, 29, 'RAM DDR4 bus 3200 phù hợp máy văn phòng và gaming.', 50, 450000, '3e89ebdb49f712c7d90d1b39e348bbbf.jpg', CURRENT_TIMESTAMP, 0, NULL, NULL),
@@ -396,6 +443,8 @@ INSERT INTO `sanphams` (`id`, `ten_san_pham`, `admin_id`, `loai_san_pham_id`, `m
 (76, 'Bàn di chuột gaming size L', 9, 34, 'Pad chuột bề mặt mịn, di chuột chính xác.', 26, 149000, 'bac9162b47c56fc8a4d2a519803d51b3.jpg', CURRENT_TIMESTAMP, 0, NULL, NULL),
 (77, 'Ghế gaming công thái học', 9, 34, 'Thiết kế ngồi lâu thoải mái cho game thủ.', 6, 2890000, '996a7fa078cc36c46d02f9af3bef918b.jpg', CURRENT_TIMESTAMP, 0, NULL, NULL);
 
+=======
+>>>>>>> 9757977c83c8138327f5b9488c8231c3618aafda
 -- --------------------------------------------------------
 
 --
@@ -437,6 +486,7 @@ INSERT INTO `users` (`id`, `name`, `email`, `password`, `birth`, `ngay_tao_tai_k
 (11, 'Nguyễn Thị Linh', 'nguyenthilinh@gmail.com', '$2y$10$/7AA3fgG/bp5oFTEtuBqDukr4KJSgO8eB0FNQr.z1wQ/ZpBUEf5gS', '2001-01-02', '2021-03-07 09:25:38', '0912567712', 'Cà Mau', '96b9bff013acedfb1d140579e2fbeb63.jpg', 0, 0),
 (12, 'Nguyễn Trí Cường', 'nguyentricuong@gmail.com', '$2y$10$Wus23MoxhEDldgghAOlQjeGTOCoDqmdCohGFoegE/lcv9E3DiWyhq', '2021-01-22', '2021-03-07 10:47:44', '0908123321', 'Quận Nam Từ Liêm Hà Nội', 'beed13602b9b0e6ecb5b568ff5058f07.jpg', 0, 0);
 
+<<<<<<< HEAD
 
 -- ============================================================
 -- BỔ SUNG THÊM SẢN PHẨM CHO CÁC DANH MỤC (khoảng 10 sản phẩm/danh mục)
@@ -500,6 +550,8 @@ INSERT INTO `sanphams` (`id`, `ten_san_pham`, `admin_id`, `loai_san_pham_id`, `m
 
 ALTER TABLE `sanphams` AUTO_INCREMENT=133;
 
+=======
+>>>>>>> 9757977c83c8138327f5b9488c8231c3618aafda
 --
 -- Các ràng buộc cho các bảng đã đổ
 --

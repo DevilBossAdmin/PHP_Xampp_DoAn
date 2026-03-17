@@ -200,7 +200,11 @@ img {
 }
 
 .mb-100 {
+<<<<<<< HEAD
     margin-bottom: 60px;
+=======
+    margin-bottom: 100px;
+>>>>>>> 9757977c83c8138327f5b9488c8231c3618aafda
 }
 
 .bg-img {
@@ -288,6 +292,7 @@ img {
 }
 
 .section_padding_100 {
+<<<<<<< HEAD
     padding: 60px 0;
 }
 
@@ -297,6 +302,17 @@ img {
 
 .section_padding_0_100 {
     padding: 0 0 60px;
+=======
+    padding: 100px 0;
+}
+
+.section_padding_100_0 {
+    padding: 100px 0 0;
+}
+
+.section_padding_0_100 {
+    padding: 0 0 100px;
+>>>>>>> 9757977c83c8138327f5b9488c8231c3618aafda
 }
 
 .section_heading {
@@ -317,6 +333,7 @@ img {
 
 .karl-btn {
     display: inline-block;
+<<<<<<< HEAD
     min-width: 140px;
     height: 44px;
     color: #fff;
@@ -327,6 +344,18 @@ img {
     font-size: 12px;
     font-weight: 700;
     line-height: 40px;
+=======
+    min-width: 170px;
+    height: 55px;
+    color: #fff;
+    border: 3px solid #fff;
+    border-radius: 2px;
+    padding: 0 30px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 49px;
+>>>>>>> 9757977c83c8138327f5b9488c8231c3618aafda
 }
 
 .karl-btn:hover,
@@ -375,8 +404,12 @@ img {
 ------------------------ */
 
 .top_header_area {
+<<<<<<< HEAD
     /* Thu gọn header */
     height: 80px;
+=======
+    height: 150px;
+>>>>>>> 9757977c83c8138327f5b9488c8231c3618aafda
     width: 100%;
     position: relative;
     z-index: 1000;
@@ -525,9 +558,14 @@ img {
 }
 
 .main_header_area {
+<<<<<<< HEAD
     /* Thu gọn thanh menu */
     height: 80px;
     padding-top: 6px;
+=======
+    height: 150px;
+    padding-top: 30px;
+>>>>>>> 9757977c83c8138327f5b9488c8231c3618aafda
 }
 
 .header-social-area a {
@@ -556,15 +594,24 @@ img {
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
+<<<<<<< HEAD
     padding-right: 8px;
     padding-left: 8px;
     position: relative;
     z-index: 1;
     font-size: 12px;
+=======
+    padding-right: 15px;
+    padding-left: 15px;
+    position: relative;
+    z-index: 1;
+    font-size: 14px;
+>>>>>>> 9757977c83c8138327f5b9488c8231c3618aafda
     font-weight: 700;
     text-transform: uppercase;
 }
 
+<<<<<<< HEAD
 /* Gọn pill user (Xin chào...) */
 .user-pill {
     padding: 6px 10px !important;
@@ -580,6 +627,8 @@ img {
     height: 28px !important;
 }
 
+=======
+>>>>>>> 9757977c83c8138327f5b9488c8231c3618aafda
 .main-menu-area .navbar {
     padding: 0;
 }
@@ -663,7 +712,11 @@ img {
     content: "\f078";
     display: inline-block;
     padding-left: 10px;
+<<<<<<< HEAD
     padding-right: 10px;
+=======
+    padding-right: 15px;
+>>>>>>> 9757977c83c8138327f5b9488c8231c3618aafda
     vertical-align: middle;
     float: right;
     color: #9f9f9f;
@@ -809,19 +862,31 @@ img {
 
 .welcome_slide_text > h2,
 .single_catagory_area h2 {
+<<<<<<< HEAD
     /* Thu nhỏ chữ banner để không chiếm quá nhiều diện tích */
     font-size: 48px;
+=======
+    font-size: 92px;
+>>>>>>> 9757977c83c8138327f5b9488c8231c3618aafda
     letter-spacing: 0;
     margin-left: -5px;
     text-transform: uppercase;
     color: #fff;
+<<<<<<< HEAD
     margin-bottom: 12px;
+=======
+    margin-bottom: 20px;
+>>>>>>> 9757977c83c8138327f5b9488c8231c3618aafda
 }
 
 .welcome_slide_text h6,
 .single_catagory_area h6 {
     color: #fff;
+<<<<<<< HEAD
     font-size: 12px;
+=======
+    font-size: 14px;
+>>>>>>> 9757977c83c8138327f5b9488c8231c3618aafda
     margin-bottom: 5px;
 }
 
@@ -1041,8 +1106,12 @@ img {
 -------------------------- */
 
 .single_catagory_area {
+<<<<<<< HEAD
     /* Thu nhỏ box top category */
     padding: 45px 20px;
+=======
+    padding: 150px 50px;
+>>>>>>> 9757977c83c8138327f5b9488c8231c3618aafda
     width: 50%;
     -webkit-box-flex: 0;
     -ms-flex: 0 0 50%;
@@ -1101,7 +1170,11 @@ img {
 }
 
 .single_gallery_item {
+<<<<<<< HEAD
     margin-bottom: 60px;
+=======
+    margin-bottom: 100px;
+>>>>>>> 9757977c83c8138327f5b9488c8231c3618aafda
     overflow: hidden
 }
 
@@ -1115,7 +1188,11 @@ img {
     width: 100%;
     -webkit-transition-duration: 500ms;
     transition-duration: 500ms;
+<<<<<<< HEAD
     height: 220px;
+=======
+    height: 300px;
+>>>>>>> 9757977c83c8138327f5b9488c8231c3618aafda
 }
 
 .single_gallery_item:hover .product-img > img {
@@ -1168,24 +1245,40 @@ img {
 }
 
 .product-description {
+<<<<<<< HEAD
     margin-top: 12px;
 }
 
 .product-description h4 {
     font-weight: 500;
     font-size: 13px;
+=======
+    margin-top: 20px;
+}
+
+.product-description h4 {
+    font-weight: 400;
+>>>>>>> 9757977c83c8138327f5b9488c8231c3618aafda
     color: #9f9f9f;
     margin-bottom: 5px;
     display: block;
 }
 
 .product-description p {
+<<<<<<< HEAD
     font-size: 14px;
+=======
+    font-size: 15px;
+>>>>>>> 9757977c83c8138327f5b9488c8231c3618aafda
     margin: 0;
 }
 
 .product-description .add-to-cart-btn {
+<<<<<<< HEAD
     margin-top: 18px;
+=======
+    margin-top: 50px;
+>>>>>>> 9757977c83c8138327f5b9488c8231c3618aafda
     font-size: 12px;
     font-weight: 700;
     color: #ff084e;
@@ -2121,6 +2214,7 @@ img {
     font-size: 12px;
     line-height: 2;
     color: #9f9f9f;
+<<<<<<< HEAD
 }
 /* =========================
    Custom compact UI tweaks
@@ -2158,3 +2252,6 @@ img {
 .product-description h4 {
     margin-bottom: 3px;
 }
+=======
+}
+>>>>>>> 9757977c83c8138327f5b9488c8231c3618aafda

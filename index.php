@@ -1,11 +1,15 @@
 <?php
     include_once('config_user.php');
     $_isUserIndexPage = true;
+<<<<<<< HEAD
     $_enableChatAiBox = true;
     session_start();
     if(!isset($_SESSION["cart"]) || !is_array($_SESSION["cart"])){
         $_SESSION["cart"] = array();
     }
+=======
+    session_start();
+>>>>>>> 9757977c83c8138327f5b9488c8231c3618aafda
     
     $id = $name = $price = $count = $money = $image = "";
 
@@ -57,7 +61,11 @@
                 );
                 $test = false;
                 $i = 0;
+<<<<<<< HEAD
                 foreach((isset($_SESSION["cart"]) && is_array($_SESSION["cart"]) ? $_SESSION["cart"] : array()) as $cart) {
+=======
+                foreach($_SESSION["cart"] as $cart) {
+>>>>>>> 9757977c83c8138327f5b9488c8231c3618aafda
                     if($val["name"] == $cart["name"]) {
                         $test = true;
                         $cart["count"] = $cart["count"] + $val["count"];
